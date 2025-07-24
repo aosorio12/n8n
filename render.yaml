@@ -45,7 +45,7 @@ services:
         value: '5678'
       - key: N8N_PROTOCOL
         value: https
-      - key: N8N_WEBHOOK_TUNNEL_URL
+      - key: WEBHOOK_URL
         value: https://n8n-service-1s4k.onrender.com/
 
       # Habilitar modo Owner UI Setup (ya activado por defecto en nuevas versiones)
