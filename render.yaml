@@ -48,7 +48,13 @@ services:
       - key: WEBHOOK_URL
         value: https://n8n-service-1s4k.onrender.com/
 
-      # Habilitar modo Owner UI Setup (ya activado por defecto en nuevas versiones)
+      # 🔓 ACTIVAR todas las credenciales en la UI
+      - key: N8N_DISABLE_UI_CREDENTIALS
+        value: 'false'
+
+      # ✅ (Opcional) activar características beta si quieres usar Agente AI
+      - key: N8N_ALLOW_BETA_FEATURES
+        value: 'true'
 
 databases:
   - name: n8n-db
